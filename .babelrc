@@ -1,0 +1,36 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "debug": false,
+        "useBuiltIns": true,
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "ie >= 11"
+          ]
+        }
+      }
+    ],
+    "vue",
+    "flow"
+  ],
+  "plugins": [
+    "lodash",
+    "transform-runtime",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "syntax-dynamic-import",
+    "dynamic-import-node"
+    // "react-hot-loader/babel"
+  ],
+  "env": {
+    // only enable it when process.env.NODE_ENV is 'development' or undefined
+    "development": {
+      "plugins": []
+    }
+  }
+}
